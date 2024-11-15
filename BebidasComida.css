@@ -1,0 +1,207 @@
+/* Estilos básicos */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+header {
+    position: relative;
+    border-bottom: 1px solid;
+    border-color: #bb8f2f79;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+main{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer {
+    position: relative;
+    border-top: 1px solid;
+    border-color: #bb8f2f79;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Class*/
+    /*Estilos del header*/
+        /*Estilos del menu*/
+        .Nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .Nav > li {
+            position: relative;
+        }
+        .Nav > li > a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+        /*Submenus*/
+        .Nav li ul {
+            display: none;
+            position: absolute;
+            background-color: black;
+            top: 100%;
+            left: 0;
+            width: 130px;
+            list-style: none;
+            z-index: 1;
+            box-shadow: 10px 10px 15px rgba(15, 15, 15, 0.5);
+        }
+        .Nav li ul li {
+            position: relative;
+        }
+        .Nav li ul li a {
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+        /*Submenus anidados*/
+        .Nav li ul li ul {
+            top: 0px;
+            left: 100%;
+        }
+        /*Mostrar submenus al pasar el mouse*/             
+        .Nav li:hover > ul {
+            display: block;
+        }
+        .Nav li a:hover {
+            background-color: black;
+            color: #bb8f2f;
+        }
+        .Desplegable li a:hover {
+            background-color: #bb8f2f46;
+            color: white;
+        }
+
+    /*Estilos del main*/
+        .Menu{
+            background-color: #bb8f2f;
+            width: 450px;
+            height: 450px;
+            border-radius: 100%;
+            align-items: center;
+        }
+        .Seccion{
+            width: 1100px;
+            height: 300px;
+            padding: 30px;
+        }
+
+    /*Estilos del footer*/
+        /*Contenedor*/
+        .Contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        /*Estilos para derechos de la pagina*/
+        .Derechos p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        /* Estilos para redes sociales */
+        .RedesSociales a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .RedesSociales img {
+            width: 30px;
+            height: 30px;
+        }
+
+/*Id*/
+    /*Header*/
+    #MenuDesplegable {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 20px;
+        height: 120px;
+        top: 10px;
+        right: 20px;
+    }
+    #Logo{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        left: 40px;
+    }
+    /*Main*/
+        /*Vinculo a otras paginas con sus respectivos efectos*/
+        #ConAlcohol{
+            position: relative;
+            background-image: url(Imagenes/BCA.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+            margin-right: auto;
+            top: 90px;
+        } 
+        #ConAlcohol:hover{
+            border-color: #5e491d;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+        }
+        #SinAlcohol{
+            position: relative;
+            background-image: url(Imagenes/BSA.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+            margin-left: auto;
+            top: -210px;     
+        }
+        #SinAlcohol:hover{
+            border-color: #5e491d;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+        }
+
+        /*Titulos*/
+        #TituloConAlcohol{
+            position: relative;
+            top: -450px;
+            left: -125px; 
+        }
+        #TituloSinAlcohol{
+            position: relative;
+            top: -750px;
+            left: 470px;
+        }

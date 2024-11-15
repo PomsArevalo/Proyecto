@@ -1,0 +1,266 @@
+/* Estilos básicos */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+header {
+    position: relative;
+    border-bottom: 1px solid;
+    border-color: #bb8f2f79;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+main {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+footer {
+    position: relative;
+    border-top: 1px solid;
+    border-color: #bb8f2f79;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Class*/
+    /*Estilos del header*/
+        /*Estilos del menu*/
+        .Nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .Nav > li {
+            position: relative;
+        }
+        .Nav > li > a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+        /*Submenus*/
+        .Nav li ul {
+            display: none;
+            position: absolute;
+            background-color: black;
+            top: 100%;
+            left: 0;
+            width: 130px;
+            list-style: none;
+            z-index: 1;
+            box-shadow: 10px 10px 15px rgba(15, 15, 15, 0.5);
+        }
+        .Nav li ul li {
+            position: relative;
+        }
+        .Nav li ul li a {
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+        /*Submenus anidados*/
+        .Nav li ul li ul {
+            top: 0px;
+            left: 100%;
+        }
+        /*Mostrar submenus al pasar el mouse*/             
+        .Nav li:hover > ul {
+            display: block;
+        }
+        .Nav li a:hover {
+            background-color: black;
+            color: #bb8f2f;
+        }
+        .Desplegable li a:hover {
+            background-color: #bb8f2f46;
+            color: white;
+        }
+
+    /*Estilos del main*/
+    .Menu {
+        background-color: #bb8f2f;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        position: relative;
+        overflow: visible;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .Menu img {
+        position: absolute;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 500px;
+        height: auto;
+    }    
+    
+    /*Estilos del footer*/
+        /*Contenedor*/
+        .Contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        /*Estilos para derechos de la pagina*/
+        .Derechos p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        /* Estilos para redes sociales */
+        .RedesSociales a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .RedesSociales img {
+            width: 30px;
+            height: 30px;
+        }
+
+/*Id*/
+    /*Header*/
+    #MenuDesplegable {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 20px;
+        height: 120px;
+        top: 10px;
+        right: 20px;
+    }
+    #Logo{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        left: 40px;
+    }
+
+    /*Main*/
+        /*Vinculo a otras paginas con sus respectivos efectos*/
+        #Ensaladas{
+            background-image: url(Imagenes/Ensaladas.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        }
+        #Ensaladas:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }
+        #Caldos{
+            background-image: url(Imagenes/Caldos.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        } 
+        #Caldos:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }
+        #Platillos{
+            background-image: url(Imagenes/Platillos.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        } 
+        #Platillos:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }
+        #Cortes{
+            background-image: url(Imagenes/Cortes.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        } 
+        #Cortes:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }
+        #Mariscos{
+            background-image: url(Imagenes/Mariscos.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        } 
+        #Mariscos:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }
+        #Tacos{
+            background-image: url(Imagenes/Tacos.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        } 
+        #Tacos:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }
+        #BebidasComida{
+            background-image: url(Imagenes/BebidasC.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid;
+            border-color: black;
+            transition: transform 0.3s ease;
+        } 
+        #BebidasComida:hover{
+            box-shadow: 0px 0px 20px rgba(187, 143, 47, 0.5);
+            border-color: #5e491d;
+            transform: scale(1.1);
+        }

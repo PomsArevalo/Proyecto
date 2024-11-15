@@ -1,0 +1,231 @@
+/* Estilos básicos */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+header {
+    position: relative;
+    border-bottom: 1px solid;
+    border-color: #bb8f2f79;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+main{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer {
+    position: relative;
+    border-top: 1px solid;
+    border-color: #bb8f2f79;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Class*/
+    /*Estilos del header*/
+        /*Estilos del menu*/
+        .Nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .Nav > li {
+            position: relative;
+        }
+        .Nav > li > a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: block;
+        }
+        /*Submenus*/
+        .Nav li ul {
+            display: none;
+            position: absolute;
+            background-color: black;
+            top: 100%;
+            left: 0;
+            width: 130px;
+            list-style: none;
+            z-index: 1;
+            box-shadow: 10px 10px 15px rgba(15, 15, 15, 0.5);
+        }
+        .Nav li ul li {
+            position: relative;
+        }
+        .Nav li ul li a {
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+        /*Submenus anidados*/
+        .Nav li ul li ul {
+            top: 0px;
+            left: 100%;
+        }
+        /*Mostrar submenus al pasar el mouse*/             
+        .Nav li:hover > ul {
+            display: block;
+        }
+        .Nav li a:hover {
+            background-color: black;
+            color: #bb8f2f;
+        }
+        .Desplegable li a:hover {
+            background-color: #bb8f2f46;
+            color: white;
+        }
+
+    /*Estilos del main*/
+        /*Estilos del inicio */
+        .Inicio {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 550px;
+            width: 330px;
+        }
+        /*Mostrar texto sobre un fondo al pasar mouse*/
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(65, 62, 62, 0.8); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .overlay-text {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            padding: 30px;
+        }
+
+    /*Estilos del footer*/
+        /*Contenedor*/
+        .Contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        /*Estilos para derechos de la pagina*/
+        .Derechos p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        /* Estilos para redes sociales */
+        .RedesSociales a {
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .RedesSociales img {
+            width: 30px;
+            height: 30px;
+        }
+
+/*Id*/
+    /*Header*/
+    #MenuDesplegable {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding: 20px;
+        height: 120px;
+        top: 10px;
+        right: 20px;
+    }
+    #Logo{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        left: 40px;
+    }
+    /*Main*/
+    #InicioContenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    #Inicio1 {
+        position: relative;
+        background-image: url(Imagenes/Inicio1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 550px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+    }  
+    #Inicio1:hover .overlay {
+        opacity: 1;
+    }
+    #Inicio2 {
+        position: relative;
+        background-image: url(Imagenes/Inicio2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 550px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+    }  
+    #Inicio2:hover .overlay {
+        opacity: 1; 
+    }
+    #Inicio3 {
+        position: relative;
+        background-image: url(Imagenes/Inicio3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 550px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 20px;
+    }  
+    #Inicio3:hover .overlay {
+        opacity: 1;
+    }
+    #Eslogan{
+        background-color: black;
+        position: relative;
+        margin-top: 20px;
+
+    }

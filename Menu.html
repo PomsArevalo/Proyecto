@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sangre del Agave</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <!--Se agrega el logo de nuestra pagina-->
+        <div id="Logo">
+            <img src="Imagenes/Logo.svg"  height="150">
+        </div>
+        <!--Se hace una lista anidada para hacer el menu desplegable-->
+        <!--Se vinculan las otras paginas correspondientes de acuerdo a cada seccion-->
+        <div id="MenuDesplegable">
+            <ul class="Nav">
+                <li><a href="Inicio.html">INICIO</a></li>
+                <li class="Desplegable"><a href="Menu.html">MENÚ</a>
+                    <ul>
+                        <li><a href="Desayunos.html">Desayunos</a>
+                            <ul>
+                                <li><a href="Tradicionales.html">Tradicionales</a></li>
+                                <li><a href="BebidasDesayuno.html">Bebidas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Comida.html">Comida</a>
+                            <ul>
+                                <li><a href="Ensaladas.html">Ensaladas</a></li>
+                                <li><a href="Caldos.html">Caldos</a></li>
+                                <li><a href="Platillos.html">Platillos</a></li>
+                                <li><a href="Cortes.html">Cortes</a></li>
+                                <li><a href="Mariscos.html">Mariscos</a></li>
+                                <li><a href="Tacos.html">Tacos</a></li>
+                                <li><a href="BebidasComida.html">Bebidas</a>
+                                    <ul>
+                                        <li><a href="ConAlcohol.html">Con Alcohol</a></li>
+                                        <li><a href="SinAlcohol.html">Sin Alcohol</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Postres.html">Postres</a></li>
+                    </ul>
+                </li>
+
+                <li class="Desplegable"><a href="Promociones.html">PROMOCIONES</a>
+                    <ul>
+                        <li><a href="Descuentos.html">Descuentos</a></li>
+                        <li><a href="Paquetes.html">Paquetes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Galeria.html">GALERÍA</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!--Contenido de la pagina-->
+    <main>
+        <!--Desayunos-->
+        <div class="Seccion">
+            <a href="Desayunos.html"><div class="Menu" id="Desayunos"></div></a>
+            <div id="TituloDesayunos">
+                <img src="Imagenes/Desayunos.svg" width="700">
+            </div>
+            <div id="DescripcionDesayunos">
+                <p>Que tu mañana se llene de los colores, aromas y sabores que solo nuestra autentica cocina mexicana puede ofrecerte, transformando cada bocado en el comienzo de algo extraordinario.</p>
+            </div>
+        </div>
+        <!--Comida-->
+        <div class="Seccion">
+            <a href="Comida.html"><div class="Menu" id="Comida"></div></a>
+            <div id="TituloComida">
+                <img src="Imagenes/Comida.svg" width="700">
+            </div>
+            <div id="DescripcionComida">
+                <p>Para un festín digno de los dioses, disfruta la riqueza gastronómica de México en cada uno de nuestros icónicos platillos, elaborados con el toque único de nuestras especias y las recetas ancestrales de la abuela.</p>
+            </div>
+        </div>
+        <!--Postres-->
+        <div class="Seccion">
+            <a href="Postres.html"><div class="Menu" id="Postres"></div></a>
+            <div id="TituloPostres">
+                <img src="Imagenes/Postres.svg" width="700">
+            </div>
+            <div id="DescripcionPostres">
+                <p>Para cerrar con broche de oro, deja que nuestros postres te envuelvan en una explosión de sabores únicos que crean una experiencia inigualable.</p>
+                <p>¡Ven y saborea nuestro dulce legado, y llévate, a México en la piel!</p>
+            </div>
+        </div>     
+    </main>
+
+    <!--Pie de pagina-->
+    <footer>
+        <div class="Contenedor">
+            <!--Derechos de la pagina-->
+            <div class="Derechos">
+                <p>&copy; 2024 La Sangre Del Agave. Reservados todos los derechos.</p>
+                <p>Pamela Arevalo - Programación Web 1</p>
+            </div>
+            <!-- Redes sociales -->
+            <div class="RedesSociales">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="Imagenes/Facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="Imagenes/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="Imagenes/Twitter.svg" alt="Twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
